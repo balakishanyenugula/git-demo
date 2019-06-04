@@ -16,6 +16,9 @@ public class Controller {
 	@PostMapping
 	public void saveData(String name) {
 		System.out.println("name..."+name);
+		if(name.equals("Balakishan")) {
+			System.out.println("true");
+		}
 	}
 
 }
