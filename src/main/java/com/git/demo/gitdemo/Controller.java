@@ -1,5 +1,6 @@
 package com.git.demo.gitdemo;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,11 @@ public class Controller {
 		if(name.equals("Balakishan")) {
 			System.out.println("true");
 		}
+	}
+	
+	@DeleteMapping
+	public void deleteData(Integer id) {
+		System.out.println("id...."+id);
 	}
 
 }
