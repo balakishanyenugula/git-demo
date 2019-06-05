@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/controller")
 public class Controller {
 	
-	@GetMapping("/get")
+	@GetMapping("/getName")
 	public String getName() {
-		return "Balakishan";
+		return "Balu";
 	}
 	@PostMapping
 	public void saveData(String name) {
